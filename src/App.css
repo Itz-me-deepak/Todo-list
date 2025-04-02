@@ -1,0 +1,231 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.App.dark-mode h1 {
+  color: #ecf0f1;
+}
+
+.input-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-container input {
+  padding: 12px;
+  width: 60%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.App.dark-mode .input-container input {
+  background-color: #34495e;
+  border-color: #7f8c8d;
+  color: #ecf0f1;
+}
+
+.input-container input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.input-container button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #2980b9;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:first-child {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.controls button:first-child:hover {
+  background-color: #d4ac0d;
+}
+
+.controls button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.controls button:last-child:hover {
+  background-color: #c0392b;
+}
+
+.controls button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.counter {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #7f8c8d;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.App.dark-mode .counter {
+  color: #bdc3c7;
+  background-color: #34495e;
+}
+
+.counter:hover {
+  background-color: #e8ecef;
+}
+
+.App.dark-mode .counter:hover {
+  background-color: #3d566e;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.App.dark-mode .progress-bar {
+  background-color: #7f8c8d;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2ecc71;
+  border-radius: 4px;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.App.dark-mode .todo-table {
+  background-color: #34495e;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.todo-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.todo-table tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.App.dark-mode .todo-table tr {
+  border-bottom: 1px solid #7f8c8d;
+}
+
+.todo-table tr:hover {
+  background-color: #f5f6fa;
+}
+
+.App.dark-mode .todo-table tr:hover {
+  background-color: #3d566e;
+}
+
+.todo-table tr.completed td:first-child {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.todo-table td {
+  vertical-align: middle;
+}
+
+.todo-table .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-table .complete-btn {
+  padding: 8px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-table .complete-btn:hover {
+  background-color: #27ae60;
+}
+
+.todo-table button:not(.complete-btn) {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-table button:not(.complete-btn):hover {
+  background-color: #c0392b;
+}
